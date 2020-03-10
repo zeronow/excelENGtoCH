@@ -14,7 +14,7 @@ def read_excel():
     # 打开文件
     workbook = xlrd.open_workbook('C:/Users/ZERONOW/Desktop/engTOch/file.xls')
 
-    sheet1 = workbook.sheet_by_index(0)  # sheet索引从0开始
+    sheet1 = workbook.sheet_by_index(1)  # sheet索引从0开始
 
     f = xlwt.Workbook() #创建待写入工作薄
     sheet2 = f.add_sheet(u'ONE',cell_overwrite_ok=True) #创建待写入sheet
